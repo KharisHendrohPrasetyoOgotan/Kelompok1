@@ -1,3 +1,4 @@
+#Membuat judul ucapan selamat datang
 print("-------------------------------")
 print("Selamat Datang di Phyton Pizza!")
 print("-------------------------------")
@@ -71,5 +72,41 @@ elif pilih_crust == 5:
 else :
     print ("Tidak ada jenis crust")
 
+#Menjumlahkan total harga sementara
 total_harga_sementara = harga_pizza + harga_crust
 print ("Total harga sementara : Rp",total_harga_sementara)
+
+#Pilih Ukuran Pizza
+print("UKURAN PIZZA")
+print ("1. Personal + Rp0")
+print ("2. Regular + Rp57,273")
+print ("3. Large + Rp89,097")
+ukuran = int(input("Silahkan pilih ukuran pizza : "))
+if ukuran == 1:
+    print ("Personal : Rp0")
+    harga_ukuran = 0
+elif ukuran == 2:
+    print ("Regular : Rp57,273")
+    harga_ukuran = 57273
+elif ukuran == 3:
+    print ("Large : Rp89,097")
+    harga_ukuran = 89097
+else : print ("Tidak ada pilihan ukuran")
+
+#Menjumlahkan total harga
+total_harga = harga_pizza + harga_crust + harga_ukuran
+print ("Total harga anda adalah :", total_harga)
+
+#Extra Cheese
+tambah_keju = (input("Apakah ingin Extra Cheese? y/n : "))
+if tambah_keju == "y" :
+   harga_keju = 13636
+   print ("Total harga yang harus anda bayar : Rp",total_harga + harga_keju )
+else : 
+    tambah_keju == "n" 
+    print ("Total harga yang harus anda bayar : Rp",total_harga)
+
+#Membuat kalimat penutup
+print ("-------------------------------------------------")
+print ("Terima kasih telah memesan pizza di Phyton Pizza!")
+print ("-------------------------------------------------")
