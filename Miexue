@@ -59,3 +59,34 @@ def Menu_Utama():
         if pilihan == '1':
             tampilkan_menu()
             pesanan = input("Masukkan menu yang ingin dipesan: ")
+
+if pesanan == "1":
+                keranjang.tambah_pesanan("Miexue Ice Cream", 5000)
+                print ("Miexue Ice Cream sudah ditambahkan ke keranjang")
+            elif pesanan == "2":
+                keranjang.tambah_pesanan("Boba Shake", 16000)
+                print ("Boba Shake sudah ditambahkan ke keranjang")
+            elif pesanan == "3":
+                keranjang.tambah_pesanan("Mi Sundae", 14000)
+                print ("Mie Sundae sudah ditambahkan ke keranjang")
+            elif pesanan == "4":
+                keranjang.tambah_pesanan("Mi Ganas", 11000)
+                print ("Mi Ganas sudah ditambahkan ke keranjang")
+            elif pesanan == "5":
+                keranjang.tambah_pesanan("Creamy Mango Boba", 22000)
+                print ("Creamy Mango Boba sudah ditambahkan ke keranjang")
+            else:
+                print("Menu tidak ada!")
+        elif pilihan == '2':
+            keranjang.tampilkan_pesanan()
+        elif pilihan == '3':
+            total_harga = keranjang.hitung_total_harga()
+            print(f"Total biaya yang harus dibayarkan adalah {total_harga} rupiah. Terima kasih sudah memesan!")
+            break                               
+        elif pilihan == '4':
+            break
+        else:
+            print("Pilihan tidak valid!")
+
+if name == "main":
+    Menu_Utama()
