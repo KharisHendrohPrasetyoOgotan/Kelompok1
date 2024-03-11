@@ -27,3 +27,35 @@ class List_Menu:
             print(f"{idx}. {current.menu} {current.harga} rupiah")
             current = current.next
             idx += 1
+
+def hitung_total_harga(self):
+        total_harga = 0
+        current = self.head
+        while current:
+            total_harga += current.harga
+            current = current.next
+        return total_harga
+
+def tampilkan_menu():
+    print("Menu Miexue:")
+    print("1. Miexue Ice Cream -> Rp5000")
+    print("2. Boba Shake -> Rp16000")
+    print("3. Mi Sundae -> Rp14000")
+    print("4. Mi Ganas -> Rp11000")
+    print("5. Creamy Mango Boba -> Rp22000")
+
+def Menu_Utama():
+    keranjang = List_Menu()
+
+    while True:
+        print("\nMenu:")
+        print("1. Pesan Miexue")
+        print("2. Tampilkan Pesanan")
+        print("3. Bayar Pesanan")
+        print("4. Keluar")
+
+        pilihan = input("Masukkan pilihan: ")
+
+        if pilihan == '1':
+            tampilkan_menu()
+            pesanan = input("Masukkan menu yang ingin dipesan: ")
