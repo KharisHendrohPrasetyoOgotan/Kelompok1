@@ -27,5 +27,30 @@ class Peta_Jepang:
             self.cityList[Kota_1].append(Kota_2)
             return True
         return False
-  
+  def hapusJalan(self,Kota_1,Kota_2):
+        if Kota_1 in self.cityList and Kota_2 in self.cityList:
+            self.cityList[Kota_2].remove(Kota_1)
+            self.cityList[Kota_1].remove(Kota_2)
+            return True
+        return False
+def hapusJalan(self,Kota_1,Kota_2):
+        if Kota_1 in self.cityList and Kota_2 in self.cityList:
+            self.cityList[Kota_2].remove(Kota_1)
+            self.cityList[Kota_1].remove(Kota_2)
+            return True
+        return False
+        
+
+PetaJepang = Peta_Jepang()
+PetaJepang.Tambah_Kota("Tokyo")
+PetaJepang.Tambah_Kota("Shibuya")
+PetaJepang.Tambah_Kota("Shinjuku")
+PetaJepang.Tambah_Kota("Shinagawa")
+PetaJepang.Tambah_Kota("Funabashi")
+PetaJepang.Tambah_Kota("Edogawa")
+PetaJepang.Tambah_Kota("Katsushika")
+PetaJepang.Tambah_Kota("Adachi")
+PetaJepang.Tambah_Kota("Itabashi")
+PetaJepang.Tambah_Kota("Nerima")
+PetaJepang.Tambah_Kota("Suginami")
  
